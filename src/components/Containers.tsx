@@ -157,7 +157,7 @@ export const ArrayField: FC<FieldProps<ArrayFieldSchema>> = ({
 
   const { control, watch } = useFormContext();
 
-  const values = watch({ nest: true });
+  const values = watch();
 
   const { fields, append, remove } = useFieldArray({ name, control });
 
@@ -286,7 +286,7 @@ export const ObjectField: FC<FieldProps<ObjectFieldSchema>> = ({
 
   const { watch } = useFormContext();
 
-  const values = watch({ nest: true });
+  const values = watch();
 
   const { isOpen, onToggle } = useDisclosure(true);
 
