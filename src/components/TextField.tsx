@@ -38,7 +38,7 @@ export const TextField: FC<FieldProps<TextFieldSchema>> = ({
 
   const errorMessage = useErrorMessage(name, label);
 
-  const values = watch({ nest: true });
+  const values = watch();
 
   const isVisible = useMemo(() => {
     return shouldDisplay ? shouldDisplay(values) : true;

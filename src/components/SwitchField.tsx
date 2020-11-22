@@ -21,7 +21,7 @@ export const SwitchField: FC<FieldProps<SwitchFieldSchema>> = ({
 
   const { register, watch } = useFormContext();
 
-  const values = watch({ nest: true });
+  const values = watch();
 
   const fieldStyles = useStyles<SwitchFieldStyles>('switchField', styles);
 
