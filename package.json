@@ -21,9 +21,9 @@
     "build-storybook": "build-storybook -c .storybook -o docs"
   },
   "peerDependencies": {
+    "@chakra-ui/core": "^0.7.0",
     "react": ">=16",
-    "react-hook-form": "^5.4.2",
-    "@chakra-ui/core": "^0.7.0"
+    "react-hook-form": ">=6"
   },
   "homepage": "https://github.com/FionnCasey/react-hook-form-generator#readme",
   "repository": {
